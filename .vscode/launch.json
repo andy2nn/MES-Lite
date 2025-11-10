@@ -1,0 +1,104 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter (Android)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+            "deviceId": "android",
+            "args": [
+                "--dart-define=FLUTTER_WEB_USE_SKIA=true"
+            ]
+        },
+        {
+            "name": "Flutter (Chrome - Web)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+            "deviceId": "chrome",
+            "args": [
+                "--dart-define=FLUTTER_WEB_USE_SKIA=true",
+                "--web-renderer=canvaskit"
+            ]
+        },
+        {
+            "name": "Flutter (macOS)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+            "deviceId": "macos",
+            "args": [
+                "--dart-define=FLUTTER_WEB_USE_SKIA=true"
+            ]
+        },
+        {
+            "name": "Flutter (Windows)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+            "deviceId": "windows",
+            "args": [
+                "--dart-define=FLUTTER_WEB_USE_SKIA=true"
+            ]
+        },
+        {
+            "name": "Flutter (Linux)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+            "deviceId": "linux",
+            "args": [
+                "--dart-define=FLUTTER_WEB_USE_SKIA=true"
+            ]
+        },
+        {
+            "name": "Flutter (All Connected Devices)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "debug",
+            "args": [
+                "--dart-define=FLUTTER_WEB_USE_SKIA=true"
+            ]
+        },
+        {
+            "name": "Flutter (Profile - Android)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "profile",
+            "deviceId": "android"
+        },
+        {
+            "name": "Flutter (Release - Android)",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "flutterMode": "release",
+            "deviceId": "android"
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Flutter (All Desktop)",
+            "configurations": [
+                "Flutter (macOS)",
+                "Flutter (Windows)",
+                "Flutter (Linux)"
+            ]
+        },
+        {
+            "name": "Flutter (All Mobile + Web)",
+            "configurations": [
+                "Flutter (Android)",
+                "Flutter (Chrome - Web)"
+            ]
+        }
+    ]
+}
