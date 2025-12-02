@@ -16,7 +16,7 @@ class App extends StatelessWidget {
           darkTheme: AppTheme.dark,
           themeMode: mode,
           routes: AppNavigations.routes,
-          initialRoute: AppNavigations.themeDemoPage,
+          initialRoute: AppNavigations.auth,
         );
       },
     );
