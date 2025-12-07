@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mes_lite/core/constants/assets_name.dart';
 import 'package:mes_lite/core/navigation/app_navigations.dart';
 import 'package:mes_lite/core/widgets/buttons/gh_button.dart';
 import 'package:mes_lite/core/widgets/buttons/gh_text_button.dart';
@@ -23,7 +25,6 @@ class AuthPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Left column: sign-in form (narrow)
                 Expanded(
                   flex: 0,
                   child: Center(
@@ -35,13 +36,14 @@ class AuthPage extends StatelessWidget {
                         children: [
                           Column(
                             children: [
-                              Icon(
-                                Icons.account_circle_outlined,
-                                size: 56,
-                                color: theme.colorScheme.onSurface
-                                    .withOpacity(0.9),
+                              SvgPicture.asset(
+                                AssetsName.logo,
+                                fit: BoxFit.contain,
+                                width: 100,
+                                color: theme.brightness == Brightness.dark
+                                    ? Colors.white
+                                    : Colors.black,
                               ),
-                              const SizedBox(height: 12),
                               Text(
                                 'Sign in to MES Lite',
                                 style: theme.textTheme.headlineMedium,

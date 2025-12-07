@@ -133,17 +133,12 @@ class AppTheme {
     brightness: Brightness.dark,
     colorScheme: const ColorScheme(
       brightness: Brightness.dark,
-      // Светлый синий для ссылок в тёмной теме
       primary: Color(0xFF58A6FF),
       onPrimary: Color(0xFFFFFFFF),
-      // Зелёный для основных действий (GitHub dark green)
       secondary: Color(0xFF2DA44E),
       onSecondary: Color(0xFFFFFFFF),
-      // Контейнер/карточка в тёмной теме (глубже чёрный как на GitHub)
       surface: Color(0xFF1C2128),
-      // Основной светлый текст
       onSurface: Color(0xFFC9D1D9),
-      // Красный для ошибок
       error: Color(0xFFF85149),
       onError: Color(0xFFFFFFFF),
     ),

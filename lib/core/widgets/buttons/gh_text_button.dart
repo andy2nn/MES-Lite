@@ -15,10 +15,9 @@ class GHTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final isLight = theme.brightness == Brightness.light;
 
     final Color textColor = theme.colorScheme.primary;
-    // Полупрозрачная подсветка при наведении/нажатии
+
     final Color hoverColor = textColor.withAlpha(26); // примерно 10% opacity
 
     final button = TextButton(
